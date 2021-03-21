@@ -13,7 +13,7 @@ const Songs = () => {
   }, []);
 
   const callSongsListApi = () => {
-    songs.results.length > 0
+    songs?.results?.length > 0
       ? null
       : dispatch({type: 'GET_SONGS_LIST', payload: ''});
   };
